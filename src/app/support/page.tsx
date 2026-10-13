@@ -11,11 +11,11 @@ export default function SupportPage() {
   const faqs = [
     {
       q: "How does the Voice Agent handle multilingual callers from coastal Karnataka?",
-      a: "Trikon Voice Studio automatically detects the caller's spoken dialect in real-time. Callers speaking in Kannada, English, or Hindi are seamlessly addressed with appropriate clinical terms and regional hospital greetings."
+      a: "CareDesk automatically detects the caller's spoken dialect in real-time. Callers speaking in Kannada, English, or Hindi are seamlessly addressed with appropriate clinical terms and regional hospital greetings."
     },
     {
-      q: "What happens when a doctor updates their OPD shifts in the Schedule manager?",
-      a: "The schedule updates are instantly synchronized with the slot availability engine. The voice agent immediately begins offering the newly opened slots and stops booking on blocked dates."
+      q: "What happens when a doctor updates their OPD shifts and clinic timings?",
+      a: "The doctor OPD schedule updates are instantly synchronized with the slot availability engine. The voice agent immediately begins offering the newly opened slots and stops booking on blocked dates."
     },
     {
       q: "How are urgent triage cases escalated to human doctors or the emergency room?",

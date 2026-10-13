@@ -33,7 +33,7 @@ export function WebhookInspectorDrawer() {
           <span>Webhook & API Inspector</span>
         </div>
       }
-      subtitle="Inspect live JSON payloads exchanged between CityCare Platform and Trikon Voice Studio"
+      subtitle="Inspect live JSON payloads exchanged between CityCare Platform and CareDesk Voice AI"
       footer={
         <button
           onClick={() => setWebhookInspectorOpen(false)}

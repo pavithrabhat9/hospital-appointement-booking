@@ -3,9 +3,9 @@ import "./globals.css";
 import { AppShell } from "@/components/layout/AppShell";
 
 export const metadata: Metadata = {
-  title: "Trikon Voice Studio | CityCare Multispeciality Hospital",
+  title: "CareDesk | CityCare Multispeciality Hospital",
   description:
-    "Intelligent Hospital Admin & Voice AI Platform for CityCare Multispeciality Hospital, Mangaluru.",
+    "Intelligent Outpatient Hospital Admin & Appointment Platform for CityCare Multispeciality Hospital, Mangaluru.",
 };
 
 export default function RootLayout({

@@ -30,7 +30,7 @@ export default function UsageBillingPage() {
             CURRENT SUBSCRIPTION
           </span>
           <h2 className="text-xl font-bold text-neutral-900 mt-0.5">
-            Trikon Voice Studio Enterprise — Health Tier
+            CareDesk Enterprise — Hospital Tier
           </h2>
           <p className="text-xs text-neutral-500 mt-1">
             Unlimited SIP channels, Multilingual Indic Models (Kannada, Hindi, Tamil, Telugu), 99.9% Telephony SLA.

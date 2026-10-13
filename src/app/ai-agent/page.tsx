@@ -152,7 +152,7 @@ export default function AiAgentPage() {
         {/* Action buttons matching Screenshot 2 */}
         <div className="flex items-center gap-2">
           <button
-            onClick={() => info("Guide", "Trikon Voice Studio documentation opened.")}
+            onClick={() => info("Guide", "CareDesk platform documentation opened.")}
             className="px-3.5 py-2 text-xs font-medium rounded-xl border border-[#E5E5E5] bg-white hover:bg-neutral-50 text-neutral-800 transition-colors flex items-center gap-1.5"
           >
             <HelpCircle className="w-3.5 h-3.5 text-neutral-500" />

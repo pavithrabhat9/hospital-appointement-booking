@@ -161,7 +161,7 @@ export const mockApi = {
     };
   },
 
-  // 5. Handle Webhook payload (simulates Trikon Voice Studio analysis.completed webhook)
+  // 5. Handle Webhook payload (simulates CareDesk Voice Gateway analysis.completed webhook)
   async handleWebhook(body: WebhookEventPayload): Promise<{ success: boolean; eventReceived: string }> {
     await delay(400);
     const store = useHospitalStore.getState();
@@ -370,7 +370,7 @@ export const mockApi = {
     return {
       connected: true,
       latencyMs: 84,
-      provider: "Trikon Voice Studio Gateway (South-Asia-blr-1)",
+      provider: "CareDesk Voice Gateway (South-Asia-blr-1)",
     };
   },
 };

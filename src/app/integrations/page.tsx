@@ -54,7 +54,7 @@ export default function IntegrationsPage() {
     <div className="space-y-6 max-w-4xl mx-auto">
       <PageHeader
         title="Telephony & API Integrations"
-        subtitle="Manage Trikon Voice Studio API credentials, webhook endpoints, and Google Calendar sync."
+        subtitle="Manage CareDesk Voice AI API credentials, webhook endpoints, and Google Calendar sync."
         breadcrumbs={[
           { label: "Account", href: "/" },
           { label: "Integrations" },
@@ -76,11 +76,11 @@ export default function IntegrationsPage() {
         <div className="flex items-center justify-between pb-4 border-b border-[#E5E5E5]">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-2xl bg-black text-white flex items-center justify-center font-bold">
-              TV
+              CD
             </div>
             <div>
               <div className="text-sm font-bold text-neutral-900">
-                Trikon Voice Studio Gateway
+                CareDesk Voice AI Gateway
               </div>
               <div className="text-xs text-neutral-500">
                 Production Outbound SIP &amp; Webhook Hub
@@ -98,7 +98,7 @@ export default function IntegrationsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-[11px] uppercase font-semibold tracking-wider text-neutral-500 mb-1">
-                Trikon Agent ID
+                CareDesk Agent ID
               </label>
               <div className="p-2.5 rounded-xl border border-[#E5E5E5] bg-neutral-50 flex items-center justify-between font-mono">
                 <span className="truncate">{hospitalConfig.defaultAgentId}</span>

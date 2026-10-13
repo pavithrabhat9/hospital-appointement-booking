@@ -43,7 +43,7 @@ export default function LoginPage() {
             </svg>
           </div>
           <div className="text-[11px] font-bold uppercase tracking-wider text-neutral-400 mb-1">
-            Voice Studio Platform
+            CareDesk Platform
           </div>
           <h1 className="text-xl font-bold tracking-tight text-neutral-900">
             {hospitalConfig.name}

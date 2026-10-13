@@ -1,8 +1,8 @@
-# Trikon Voice Studio — Hospital Admin Platform UI
+# CareDesk — Hospital Outpatient & Appointment Management Platform
 
-An intelligent outpatient hospital admin and Voice AI operations platform built for **CityCare Multispeciality Hospital, Mangaluru** powered by **Trikon Voice Studio**.
+An intelligent outpatient hospital admin and Voice AI operations platform built for **CityCare Multispeciality Hospital, Mangaluru** powered by **CareDesk Voice AI**.
 
-Designed in a clean black & white aesthetic matching the Trikon Voice Studio design system:
+Designed with a clean, modern aesthetic:
 - `#FAFAFA` background, white cards, 1px `#E5E5E5` borders, rounded 18px corners, solid black primary actions.
 - Semantic indicator colors (emerald for live/confirmed, amber for pending, rose for cancelled, orange for escalated).
 - Clean system `sans-serif` typography and monospace for IDs, tokens, timestamps, and JSON payloads.
@@ -51,18 +51,18 @@ Designed in a clean black & white aesthetic matching the Trikon Voice Studio des
 
 - **AI Agent (`/ai-agent`)**:
   - Agent switcher (*Hospital Outpatient Booking Agent, Automated Reminder Agent, Post-Discharge Follow-up Agent*).
-  - Read-only prompt guidelines matching Trikon Voice Studio (*Role & Identity, Clinical Guidelines, Knowledge Base, Escalation Rules, Forbidden Topics*).
+  - Read-only prompt guidelines matching CareDesk AI engine (*Role & Identity, Clinical Guidelines, Knowledge Base, Escalation Rules, Forbidden Topics*).
   - Dark rounded **Playground** card with live microphone stream simulator.
   - **Test Voice Call** card for dialing real test phone numbers with outbound mock telephony.
 
 - **Call Logs (`/call-logs`)**:
   - Telephony table with live indicator and refresh sync.
-  - Turn-by-turn transcript bubbles (*Trikon Bot* vs *Patient*).
+  - Turn-by-turn transcript bubbles (*CareDesk Bot* vs *Patient*).
   - Functional fake audio player with live scrub timer and animated waveforms.
   - Webhook JSON payload viewer with 1-click clipboard copy.
 
 ### Account
-- **Integrations (`/integrations`)**: Trikon Voice Studio Gateway, Agent ID, Enterprise Slug (`TRIKONDEMO`), Phone Line UUID, masked API keys with show/hide toggle, and Google Calendar sync.
+- **Integrations (`/integrations`)**: CareDesk Voice AI Gateway, Agent ID, Enterprise Slug (`TRIKONDEMO`), Phone Line UUID, masked API keys with show/hide toggle, and Google Calendar sync.
 - **Settings (`/settings`)**: Hospital organization profile and address configuration.
 - **Usage & Billing (`/usage-billing`)**: Enterprise Health Tier quota tracking and tax invoices table.
 - **Support (`/support`)**: Emergency telephony hotline, support contact, and interactive FAQ accordion.

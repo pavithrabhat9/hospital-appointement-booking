@@ -88,7 +88,7 @@ export function Sidebar() {
             <div className="overflow-hidden">
               <div className="flex items-center gap-1.5">
                 <span className="font-semibold text-sm tracking-tight text-neutral-900">
-                  Voice Studio
+                  CareDesk
                 </span>
                 <span className="text-[10px] uppercase font-bold tracking-widest text-neutral-400 bg-neutral-100 px-1.5 py-0.5 rounded">
                   v2.0

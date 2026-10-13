@@ -29,7 +29,7 @@ export const hospitalConfig: HospitalConfig = {
   phone: "+91 824 222 5555",
   emergencyPhone: "+91 824 222 5500",
   email: "admin@citycaremangalore.com",
-  voiceStudioName: "Voice Studio",
+  voiceStudioName: "CareDesk",
   enterpriseSlug: "TRIKONDEMO",
   defaultAgentId: "4275b22c-1adf-4bcd-ae3c-32228d8b6e29",
   phoneLineUuid: "line_blr_8031321629",

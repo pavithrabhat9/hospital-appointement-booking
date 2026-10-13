@@ -431,7 +431,7 @@ export default function CampaignsPage() {
               </div>
 
               <div className="p-3 bg-neutral-50 border rounded-xl text-neutral-600 text-[11px] leading-relaxed">
-                Trikon Voice Studio will dispatch calls using caller line UUID <code>line_blr_8031321629</code> with retry backoff for busy/unanswered tones.
+                CareDesk Voice Engine will dispatch calls using caller line UUID <code>line_blr_8031321629</code> with retry backoff for busy/unanswered tones.
               </div>
             </div>
           )}
