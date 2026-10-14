@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
+  HeartPulse,
   LayoutDashboard,
   Calendar,
   UserCheck,
@@ -68,21 +69,8 @@ export function Sidebar() {
       {/* Top Branding & Quick Action */}
       <div className="p-4 border-b border-[#E5E5E5] shrink-0">
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-black text-white flex items-center justify-center shrink-0 shadow-sm">
-            {/* Trikon stylized voice logo */}
-            <svg
-              className="w-5 h-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
-              <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
-              <line x1="12" y1="19" x2="12" y2="22" />
-            </svg>
+          <div className="w-9 h-9 rounded-xl bg-[#215c50] text-white flex items-center justify-center shrink-0 shadow-sm">
+            <HeartPulse className="w-5 h-5" strokeWidth={2.2} aria-hidden="true" />
           </div>
           {!isSidebarCollapsed && (
             <div className="overflow-hidden">

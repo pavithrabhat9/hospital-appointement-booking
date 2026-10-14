@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useHospitalStore } from "@/lib/store";
 import { hospitalConfig } from "@/lib/config";
-import { ArrowRight, Lock, Mail, ShieldCheck } from "lucide-react";
+import { ArrowRight, CalendarDays, HeartPulse, Lock, Mail, ShieldCheck, Stethoscope } from "lucide-react";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -23,24 +24,34 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="w-full max-w-md">
-      <div className="bg-white border border-[#E5E5E5] rounded-3xl p-8 sm:p-10 shadow-card">
+    <div className="w-full max-w-6xl overflow-hidden rounded-[28px] border border-neutral-200 bg-white shadow-card grid lg:grid-cols-[1.15fr_1fr]">
+      <section aria-label="Welcome to CareDesk" className="order-2 lg:order-1 relative flex flex-col bg-[#edf5f2] p-6 sm:p-10 lg:p-12">
+        <div className="flex items-center gap-2.5 text-[#215c50]">
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/80"><HeartPulse className="h-5 w-5" /></div>
+          <span className="text-sm font-semibold tracking-tight">CareDesk <span className="font-normal text-[#658078]">/ Healthcare, connected</span></span>
+        </div>
+        <div className="mt-7 lg:mt-10">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#507a6e]">Built around better care</p>
+          <h2 className="mt-3 max-w-md text-3xl sm:text-4xl font-semibold leading-[1.15] tracking-tight text-[#173e35]">More time for people.<br />More room for care.</h2>
+          <p className="mt-4 max-w-sm text-sm leading-relaxed text-[#587269]">Bring your appointments, care teams, and patient conversations together in one thoughtful workspace.</p>
+        </div>
+        <div className="relative mt-7 overflow-hidden rounded-2xl aspect-[2/1] lg:aspect-[3/2]">
+          <Image src="/images/healthcare-welcome.png" alt="A doctor and nurse speaking with a patient in a bright outpatient clinic" fill priority sizes="(max-width: 1023px) 100vw, 600px" className="object-cover" />
+          <div className="absolute bottom-3 left-3 right-3 flex items-center gap-3 rounded-xl bg-white/95 px-4 py-3 text-[#215c50] shadow-sm">
+            <Stethoscope className="h-5 w-5 shrink-0" />
+            <div><p className="text-xs font-semibold">Every patient. Every step.</p><p className="mt-0.5 text-[11px] text-[#658078]">Helping your team make care feel personal.</p></div>
+          </div>
+        </div>
+        <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-xs text-[#507a6e]">
+          <span className="flex items-center gap-1.5"><CalendarDays className="h-3.5 w-3.5" /> Seamless appointments</span>
+          <span className="flex items-center gap-1.5"><HeartPulse className="h-3.5 w-3.5" /> Connected care teams</span>
+        </div>
+      </section>
+      <div className="order-1 lg:order-2 flex flex-col justify-center p-8 sm:p-12 lg:p-14">
         {/* Logo and Header */}
         <div className="text-center mb-8">
-          <div className="w-12 h-12 rounded-2xl bg-black text-white flex items-center justify-center mx-auto mb-4 shadow-sm">
-            <svg
-              className="w-6 h-6"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
-              <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
-              <line x1="12" y1="19" x2="12" y2="22" />
-            </svg>
+          <div className="w-12 h-12 rounded-2xl bg-[#edf5f2] text-[#215c50] flex items-center justify-center mx-auto mb-4 shadow-sm">
+            <HeartPulse className="w-6 h-6" strokeWidth={2.2} aria-hidden="true" />
           </div>
           <div className="text-[11px] font-bold uppercase tracking-wider text-neutral-400 mb-1">
             CareDesk Platform
