@@ -12,6 +12,12 @@ export interface HospitalConfig {
   defaultAgentId: string;
   phoneLineUuid: string;
   webhookEndpoint: string;
+  trikonVoiceWidget?: {
+    src: string;
+    publicKey: string;
+    agentId: string;
+    position: string;
+  };
   adminUser: {
     name: string;
     role: string;
@@ -31,9 +37,15 @@ export const hospitalConfig: HospitalConfig = {
   email: "admin@citycaremangalore.com",
   voiceStudioName: "CareDesk",
   enterpriseSlug: "TRIKONDEMO",
-  defaultAgentId: "4275b22c-1adf-4bcd-ae3c-32228d8b6e29",
+  defaultAgentId: "19a28b2c-4fff-45fe-9298-1e25a2f12a9e",
   phoneLineUuid: "line_blr_8031321629",
   webhookEndpoint: "https://api.citycare.health/v1/webhooks/trikon",
+  trikonVoiceWidget: {
+    src: "https://voice.trikon.tech/embed.js",
+    publicKey: "tvk_pk_u57lzhwA7LUKPf5pvnlUeS22he1c86mv",
+    agentId: "19a28b2c-4fff-45fe-9298-1e25a2f12a9e",
+    position: "right",
+  },
   adminUser: {
     name: "Dr. Admin",
     role: "Administrator",
